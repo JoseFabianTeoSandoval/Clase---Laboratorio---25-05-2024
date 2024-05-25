@@ -34,6 +34,7 @@
             this.label_ID = new System.Windows.Forms.Label();
             this.label_nombre_consola = new System.Windows.Forms.Label();
             this.label_compania = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Mostrar_datos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,7 +56,7 @@
             this.dataGridView_Mostrar_datos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView_Mostrar_datos.Name = "dataGridView_Mostrar_datos";
             this.dataGridView_Mostrar_datos.RowHeadersWidth = 62;
-            this.dataGridView_Mostrar_datos.Size = new System.Drawing.Size(849, 100);
+            this.dataGridView_Mostrar_datos.Size = new System.Drawing.Size(847, 228);
             this.dataGridView_Mostrar_datos.TabIndex = 1;
             this.dataGridView_Mostrar_datos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -101,11 +102,21 @@
             this.label_compania.Text = "Compañia:";
             this.label_compania.Click += new System.EventHandler(this.label_compania_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(32, 209);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(150, 20);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Año de lanzamiento";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label_compania);
             this.Controls.Add(this.label_nombre_consola);
             this.Controls.Add(this.label_ID);
@@ -130,6 +141,7 @@
         private System.Windows.Forms.Label label_ID;
         private System.Windows.Forms.Label label_nombre_consola;
         private System.Windows.Forms.Label label_compania;
+        private System.Windows.Forms.Label label1;
     }
 }
 
